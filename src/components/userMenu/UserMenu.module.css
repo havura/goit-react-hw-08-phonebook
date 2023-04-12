@@ -1,0 +1,22 @@
+.wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+  text-align: inherit;
+  margin-right: 20px;
+}
+.btn {
+  padding: 10px 20px;
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  width: fit-content;
+}
+.text {
+  margin-right: 20px;
+  font-weight: 700;
+}
