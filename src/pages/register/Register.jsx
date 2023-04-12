@@ -2,6 +2,7 @@ import { register } from 'redux/auth/authOperations';
 import { useDispatch } from 'react-redux';
 import { Formik, Form, Field } from 'formik';
 import css from '../register/Register.module.css';
+import { useNavigate } from 'react-router-dom';
 
 const Register = () => {
   const initialValues = {
@@ -11,10 +12,12 @@ const Register = () => {
   };
 
   const dispatch = useDispatch();
+  const navigate = useNavigate()
 
   const handleSubmitRegister = async (values, { resetForm }) => {
     dispatch(register(values));
     resetForm();
+    navigate('/contacts')
   };
 
   return (
